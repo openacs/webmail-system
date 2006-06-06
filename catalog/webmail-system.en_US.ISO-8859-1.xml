@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<message_catalog package_key="webmail-system" package_version="5.0a" locale="en_US" charset="ISO-8859-1">
+
+  <msg key="Account_Administration">Account Administration</msg>
+  <msg key="Account_changed">Account changed</msg>
+  <msg key="Account_created">Account created</msg>
+  <msg key="Account_exists">Account exists</msg>
+  <msg key="Accounts">Accounts</msg>
+  <msg key="Accounts1">&lt;u&gt;A&lt;/u&gt;ccounts</msg>
+  <msg key="Action">Action</msg>
+  <msg key="Active">Active</msg>
+  <msg key="Active_session_closed">Active session closed</msg>
+  <msg key="Add_Account">Add Account</msg>
+  <msg key="Add_Contact">Add Contact</msg>
+  <msg key="Add_Server">Add Server</msg>
+  <msg key="Add_Signature">Add Signature</msg>
+  <msg key="Add_vCard">Add vCard</msg>
+  <msg key="Adding_a_contact">Adding a contact</msg>
+  <msg key="Adding_an_account">Adding an account</msg>
+  <msg key="Administration">Administration</msg>
+  <msg key="All_accounts_deleted">All accounts deleted...</msg>
+  <msg key="All_address_books_deleted">All address books deleted...</msg>
+  <msg key="All_servers_deleted">All servers deleted...</msg>
+  <msg key="All_user_preferences_deleted">All user preferences deleted...</msg>
+  <msg key="Allow_JavaScript">Allow JavaScript</msg>
+  <msg key="Append_Host">Append Host</msg>
+  <msg key="Are_you_sure_you_want_JavaScript_enabled">Are you sure you want JavaScript enabled</msg>
+  <msg key="Attachment">&lt;u&gt;A&lt;/u&gt;ttachment</msg>
+  <msg key="Attachments">Attachments</msg>
+  <msg key="Authentication">Authentication</msg>
+  <msg key="Authentication_Type">Authentication Type</msg>
+  <msg key="Bad_account_or_server_down">Bad account or server is currently down</msg>
+  <msg key="Bad_Email">Bad Email</msg>
+  <msg key="Bcc">&lt;u&gt;B&lt;/u&gt;cc</msg>
+  <msg key="Body">&lt;u&gt;B&lt;/u&gt;ody</msg>
+  <msg key="Cc">&lt;u&gt;C&lt;/u&gt;c</msg>
+  <msg key="Change">Change</msg>
+  <msg key="Click_here_to_login">Click here to login</msg>
+  <msg key="Close">Close</msg>
+  <msg key="Closed_session_with_old_server">Closed session with %old_server%</msg>
+  <msg key="Communication_problem_Please_reload_page">Communication problem. Please reload page</msg>
+  <msg key="Compose">Compose</msg>
+  <msg key="Compose1">&lt;u&gt;C&lt;/u&gt;ompose</msg>
+  <msg key="Composing_an_email">Composing an email</msg>
+  <msg key="Composing_Email_Help_Text">&lt;li&gt;The user selects 'Compose' from the main menu provided at the
+           top of the screen.
+&lt;li&gt;This then takes them to a form for their email.
+&lt;li&gt;The user then fills the fields they wish to have in the email
+           (at least one recipient must be specified to send the mail).
+&lt;li&gt;Once the user has completed their email, pressing 'Send'
+processes the mail and sends it to their recipients.</msg>
+  <msg key="Connected_to_serv_neat_name">Connected to &lt;a href=&quot;retrieve&quot; class=&quot;button&quot;&gt; %neat_name%&lt;/a&gt;</msg>
+  <msg key="Contact">Contact</msg>
+  <msg key="Contact_added">Contact added</msg>
+  <msg key="Contact_changed">Contact changed</msg>
+  <msg key="Contact_deleted">Contact deleted</msg>
+  <msg key="Contact_Management">Contact Management</msg>
+  <msg key="Contact_Management_Help_Text">&lt;li&gt;The user can select 'Contacts' to manage their online address book.
+&lt;li&gt;This takes them to their current contact list.
+&lt;li&gt;The user can then add or remove a contact by selecting from the sub-menu located under the main menu bar on the top left.
+&lt;li&gt;This takes the user to their chosen event (add or remove).
+&lt;li&gt;For adding a contact, the user must fill in the required fields within the form and then select 'Add'.
+&lt;li&gt;For removing a contact, the user must select which contact they 'Remove' to remove it.
+&lt;li&gt;The user can send a contact an email from the contacts page by selecting the envelope besides the contact's name.
+</msg>
+  <msg key="Contact_your_system_admin_for_more_information">Contact your system admin for more information.</msg>
+  <msg key="Contacts">Contacts</msg>
+  <msg key="Contacts1">Co&lt;u&gt;n&lt;/u&gt;tacts</msg>
+  <msg key="Create">Create</msg>
+  <msg key="Create_Folder">Create Folder</msg>
+  <msg key="Creating_a_folder">Creating a folder</msg>
+  <msg key="CSV">CSV</msg>
+  <msg key="Current_Folder">Current Folder:</msg>
+  <msg key="Date">Date</msg>
+  <msg key="Default">Default</msg>
+  <msg key="Default_Signature">Default Signature</msg>
+  <msg key="Delete">Delete</msg>
+  <msg key="Delete_Folder">Delete Folder</msg>
+  <msg key="Delete_selected_emails">Delete selected emails</msg>
+  <msg key="Deleting_a_folder">Deleting a folder</msg>
+  <msg key="Depending_on_the_provider_you_use_this_may_take_a_while">Depending on the provider you use this may take a while...</msg>
+  <msg key="Display_Headers">Display Headers</msg>
+  <msg key="Display_Style">Style</msg>
+  <msg key="Do_you_really_want_to_reset_the_whole_webmail_system">Do you really want to reset the whole webmail system?</msg>
+  <msg key="Edit_Account">Edit Account</msg>
+  <msg key="Edit_Contact">Edit Contact</msg>
+  <msg key="Edit_Server">Edit Server</msg>
+  <msg key="Editing_a_contact">Editing a contact</msg>
+  <msg key="Email">Email</msg>
+  <msg key="Email_contacts_first_name">Email %contacts.first_name%</msg>
+  <msg key="Email_contacts_first_names">Email %contacts.first_names%</msg>
+  <msg key="End_Original_Message">End Original Message</msg>
+  <msg key="Enhanced_Text">Enhanced Text</msg>
+  <msg key="Enter_short_name_for_this_service">Enter short name for this service.</msg>
+  <msg key="Error_Not_Logged_In">Error Not Logged In</msg>
+  <msg key="Error_Selected_user_could_not_be_removed_as_it_violates_referential_integrity">Error: Selected user could not be removed as it violates referential integrity.</msg>
+  <msg key="Exit">Exit</msg>
+  <msg key="File_size">File size</msg>
+  <msg key="File_type">File type</msg>
+  <msg key="Filename">Filename</msg>
+  <msg key="First_Name">First Name</msg>
+  <msg key="First_Names">First Names</msg>
+  <msg key="Folder">Folder</msg>
+  <msg key="Folder_Management">Folder Management</msg>
+  <msg key="Folder_Management_Help_Text">&lt;li&gt;The user can select 'Folders' to manage their folders.                                
+&lt;li&gt;This takes them to their current folder list.            
+&lt;li&gt;The user can then create or delete a folder by selecting from the sub-menu located under the main menu bar on the top left.  
+&lt;li&gt;This takes the user to their chosen event (create or delete).                            
+&lt;li&gt;For creating a folder, the folder name is required to bein and 'Create' selected.                   
+&lt;li&gt;For deleting a folder, the user must select which folder they  would like to delete from the dropdown menu and then select 'Delete' to delete it.</msg>
+  <msg key="Folder_name">Folder name</msg>
+  <msg key="Folders">Folders</msg>
+  <msg key="Folders1">&lt;u&gt;F&lt;/u&gt;olders</msg>
+  <msg key="Forward">Forward</msg>
+  <msg key="From">From</msg>
+  <msg key="Full_HTML">Full HTML</msg>
+  <msg key="Functionality_not_updated_yet">Functionality not updated yet.</msg>
+  <msg key="Fwd">Fwd: </msg>
+  <msg key="Getting_your_emails">Getting your emails</msg>
+  <msg key="Help">Help</msg>
+  <msg key="Help1">&lt;u&gt;H&lt;/u&gt;elp</msg>
+  <msg key="Hide_Headers">Hide Headers</msg>
+  <msg key="Host_Address">Host Address</msg>
+  <msg key="How_should_we_handle_HTML">How should we handle HTML? Show it as it is, remove Style Information, as enhanced text version or plain text?</msg>
+  <msg key="HTML_without_CSS">HTML without CSS</msg>
+  <msg key="Icons">Icons</msg>
+  <msg key="Id">Id</msg>
+  <msg key="IMAP">IMAP</msg>
+  <msg key="IMAP_Address">IMAP Address</msg>
+  <msg key="Imap_Address">IMAP Address</msg>
+  <msg key="IMAP_Port">IMAP Port</msg>
+  <msg key="IMAP_Server">IMAP Server</msg>
+  <msg key="Inbox">Inbox</msg>
+  <msg key="Inbox1">&lt;u&gt;I&lt;/u&gt;nbox</msg>
+  <msg key="Inbox_Help_Text">&lt;li&gt;The user selects 'Inbox' from the main menu provided at the top of the
+screen.
+&lt;li&gt;This then brings up their Inbox with all their emails listed.</msg>
+  <msg key="JavaScript">&lt;u&gt;J&lt;/u&gt;avaScript</msg>
+  <msg key="Last_Name">Last Name</msg>
+  <msg key="Login">Login</msg>
+  <msg key="Login_Help_Text">        &lt;li&gt;The user must provide their username (generally one word)
+        &lt;li&gt;The user then provides their password.
+        &lt;li&gt;The user selects the IMAP server they wish to connect to.
+        &lt;li&gt;The user then clicks 'Login'.</msg>
+  <msg key="Login_Name">Login Name</msg>
+  <msg key="Logout">Logout</msg>
+  <msg key="Logout1">&lt;u&gt;L&lt;/u&gt;ogout</msg>
+  <msg key="Logout_Help_Text">The user is able to logout by selecting 'Logout' from the main menu provided at the top of the screen.
+</msg>
+  <msg key="Maximum_size_is_limited_to_size">Maximum size is limited to %size% bytes.</msg>
+  <msg key="Navigation_bar">&lt;u&gt;N&lt;/u&gt;avigation bar</msg>
+  <msg key="Next">Next</msg>
+  <msg key="Nick_already_exists">Nick already exists</msg>
+  <msg key="Nickname">Nickname</msg>
+  <msg key="NNTP">NNTP</msg>
+  <msg key="No">No.</msg>
+  <msg key="No1">No</msg>
+  <msg key="No_active_session">No active session</msg>
+  <msg key="No_Subject">No Subject</msg>
+  <msg key="No_such_account">No such account</msg>
+  <msg key="One_of_the_following_may_have_happened">One of the following may have happened:</msg>
+  <msg key="Only_plain_text_permitted">Only plain text permitted.</msg>
+  <msg key="Original_Message">Original Message</msg>
+  <msg key="Password">Password</msg>
+  <msg key="Plain_Text">Plain Text</msg>
+  <msg key="Please_enter_the_details_of_the_new_contact_you_would_like_to_add">Please enter the details of the new contact you would like to add.</msg>
+  <msg key="Please_enter_the_details_of_the_new_contact_you_would_like_to_change">Please enter the details of the new contact you would like to change:</msg>
+  <msg key="Please_enter_the_name_of_the_new_folder_you_would_like_to_create">Please enter the name of the new folder you would like to create:</msg>
+  <msg key="Please_fill_in_the_details_for_the_account_you_would_like_to_manage">Please fill in the details for the account you would like to manage:</msg>
+  <msg key="Please_fill_in_the_details_for_the_IMAP_server_you_would_like_to_add">Please fill in the details for the IMAP server you would like to add:</msg>
+  <msg key="Please_fill_in_the_details_for_the_server_you_would_like_to_manage">Please fill in the details for the server you would like to manage:</msg>
+  <msg key="Please_log_in_before_performing_this_action">Please log in before performing this action.</msg>
+  <msg key="Please_select_IMAP_server_you_would_like_to_remove">Please select IMAP server you would like to remove:</msg>
+  <msg key="Please_select_in_the_name_of_the_folder_you_would_like_to_delete">Please select in the name of the folder you would like to delete:</msg>
+  <msg key="Please_select_user_you_would_like_to_remove">Please select user you would like to remove:</msg>
+  <msg key="POP3">POP3</msg>
+  <msg key="Port">Port</msg>
+  <msg key="Preferences">Preferences</msg>
+  <msg key="Preferences1">&lt;u&gt;P&lt;/u&gt;references</msg>
+  <msg key="Preferences_changed">Preferences changed</msg>
+  <msg key="Previous">Previous</msg>
+  <msg key="previous">&lt;A HREF=&quot;view?number=%prev_num%&quot; alt=&quot;Previous&quot;&gt;&lt;&lt;&lt;/a&gt; %number% of %msg% |</msg>
+  <msg key="previous_next">&lt;A HREF=&quot;view?number=%prev_num%&quot; alt=&quot;Previous&quot;&gt;&lt;&lt;&lt;/a&gt; %number% of %msg% &lt;A HREF=&quot;view?number=%next_num%&quot; alt=&quot;Next&quot;&gt; &gt;&gt;</msg>
+  <msg key="Print">Print</msg>
+  <msg key="Re">Re: </msg>
+  <msg key="Remove">Remove</msg>
+  <msg key="Remove_Account">Remove Account</msg>
+  <msg key="Remove_Contact">Remove Contact</msg>
+  <msg key="Remove_Server">Remove Server</msg>
+  <msg key="Remove_User">Remove User</msg>
+  <msg key="Removing_a_Contact">Removing a Contact</msg>
+  <msg key="Reply">Reply</msg>
+  <msg key="Reset_System">Reset System</msg>
+  <msg key="Retrieving_email_list">Retrieving email list</msg>
+  <msg key="Send">Send</msg>
+  <msg key="Sender">Sender</msg>
+  <msg key="sending">sending</msg>
+  <msg key="Server">Server</msg>
+  <msg key="Server_Administration">Server Administration</msg>
+  <msg key="Server_Host">Server Host</msg>
+  <msg key="Server_Name">Server Name</msg>
+  <msg key="Server_Port">Server Port</msg>
+  <msg key="Servers">Servers</msg>
+  <msg key="Set_Parameters">Set Parameters</msg>
+  <msg key="Should_we_allow_JavaScript_in_emails_sent_to_you">Should we allow JavaScript in emails sent to you?</msg>
+  <msg key="Signature">&lt;u&gt;S&lt;/u&gt;ignature</msg>
+  <msg key="SMTP">SMTP</msg>
+  <msg key="SMTP_Auth">SMTP Auth</msg>
+  <msg key="SMTP_Port">SMTP Port</msg>
+  <msg key="Style">S&lt;u&gt;t&lt;/u&gt;yle</msg>
+  <msg key="Subject">&lt;u&gt;S&lt;/u&gt;ubject</msg>
+  <msg key="Text">Text</msg>
+  <msg key="Thank_you_for_using_IMAP_Webmail">Thank you for using IMAP Webmail.</msg>
+  <msg key="The_default_IMAP_port_is_143">The default IMAP port is 143.</msg>
+  <msg key="The_following_are_the_functions_available_for_Webmail_Administrators">The following are the functions available for Webmail Administrators:</msg>
+  <msg key="The_following_document_is_to_be_used">The following document is to be used as an aid for users in understanding
+how to use the Webmail system. The main user scenarios are run through below:
+</msg>
+  <msg key="The_following_scenarios_can_only_be_performed_if-the_user_is_logged_in">The following scenarios can only be performed if the user is logged in.</msg>
+  <msg key="The_username_password_you_supplied_is_not_valid">The username/password you supplied is not valid.</msg>
+  <msg key="There_are_no_contacts">There are no contacts.</msg>
+  <msg key="This_account_exists_already">This account exists already</msg>
+  <msg key="This_is_an_extreme_action_You_should_know_what_you_are_doing">&lt;font color=&quot;red&quot;&gt;&lt;b&gt;This is an extreme action. You should know what you are doing!&lt;/b&gt;&lt;/font&gt;</msg>
+  <msg key="This_page_cannot_be_accessed_without_being_logged_in">This page cannot be accessed without being logged in.</msg>
+  <msg key="This_service_is_currently_not_available">This service is currently not available.</msg>
+  <msg key="To">&lt;u&gt;T&lt;/u&gt;o</msg>
+  <msg key="Total_messages_recent_messages">(%total_msgs% messages, %recent_msgs% recent)</msg>
+  <msg key="Type">Type</msg>
+  <msg key="Unable_to_connect_to_server">Unable to connect to server</msg>
+  <msg key="Unable_to_connect_with_server">Unable to connect with server!</msg>
+  <msg key="User">User</msg>
+  <msg key="User_Administration">User Administration</msg>
+  <msg key="User_contacts">User contacts</msg>
+  <msg key="User_Help">User Help</msg>
+  <msg key="User_not_logged_in">User not logged in</msg>
+  <msg key="User_Preferences">User Preferences</msg>
+  <msg key="Username">Username</msg>
+  <msg key="Users">Users</msg>
+  <msg key="vCard">&lt;u&gt;v&lt;/u&gt;Card</msg>
+  <msg key="Viewing_email">Viewing email</msg>
+  <msg key="Viewing_Email_Help_Text">&lt;li&gt;Once in their Inbox, the user can select any of the emails in their list
+by selecting the Sender's name.
+&lt;li&gt;This then takes the user to view the email from that sender.
+&lt;li&gt;The user then has two sets of options:
+&lt;ol&gt;
+&lt;li&gt;They can then read the email and choose to reply, forward or delete the
+mail message.
+&lt;li&gt;They can then read the email and choose to traverse through the emails via
+previous and next or close the email.
+&lt;/ol&gt;      These options are located on the top left and right respectively of
+           the email they are reading. The options are also repeated on
+           the bottom of the email.
+&lt;li&gt;If the email contains attachments, these will be displayed below
+           the email message in the 'Attachments' section.
+&lt;li&gt;The user can view any attachments by selecting the 'Filename'
+           of the attachment. If the browser can display the email, it will,
+           otherwise, the attachment will be asked to be downloaded by the
+           user.</msg>
+  <msg key="We_will_continue_automatically_when_retrieval_is_complete">We will continue automatically when retrieval is complete.</msg>
+  <msg key="Webmail_Administration">Webmail Administration</msg>
+  <msg key="Welcome">Welcome</msg>
+  <msg key="Welcome_to_IMAP_Webmail">Welcome to IMAP Webmail</msg>
+  <msg key="Yes">Yes</msg>
+  <msg key="You_are_currently_not_logged_in">You are currently not logged in.</msg>
+  <msg key="You_are_now_logged_out">You are now logged out.</msg>
+  <msg key="You_can_change_your_login_info_here">You can change your login info here:</msg>
+  <msg key="You_can_enter_your_signature_here">You can enter your signature here.</msg>
+  <msg key="You_can_reset_the_complete_webmail_system_here">You can reset the complete webmail system here:</msg>
+  <msg key="You_can_upload_a_vcard_here">You can upload a vCard here.</msg>
+  <msg key="You_cannot_change_this_element">You cannot change this element.</msg>
+  <msg key="You_dont_have_the_permission_to_add_an_account">You don't have the permission to add an account.</msg>
+  <msg key="You_have_no_new_mail">You have no new mail.</msg>
+  <msg key="You_have_no_new_mail_total_email">You have no new mail (%total_msgs% total)</msg>
+  <msg key="You_have_reached_the_max_number_of_servers_permitted">You have reached the max number of servers permitted (%max_servers%).</msg>
+  <msg key="You_have_recent_msgs_new_mail_message">You have &lt;a href=&quot;view?number=1&quot;&gt;%recent_msgs%&lt;/a&gt; new mail message.</msg>
+  <msg key="You_have_recent_msgs_new_mail_messages">You have &lt;a href=&quot;retrieve&quot;&gt;%recent_msgs%&lt;/a&gt; new mail messages.</msg>
+  <msg key="You_have_recent_total_email">You have %recent_msgs% recent message (%total_msgs% total)</msg>
+  <msg key="Your_current_webmail_session_has_expired">Your current webmail session has expired.</msg>
+  <msg key="Your_email_must_end_with_serv_host_addr">Your email must end with '%host_addr%'</msg>
+  <msg key="Your_email_was_sent">Your email was sent</msg>
+  <msg key="Your_file_is_larger_than_the_maximum_file_size_allowed_on_this_system">Your file is larger than the maximum file size allowed on this system (%size% bytes).</msg>
+  <msg key="Your_inbox_is_empty">Your inbox is empty.</msg>
+</message_catalog>

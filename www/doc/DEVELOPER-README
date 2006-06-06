@@ -1,0 +1,279 @@
+
+# ------------------------------------------------------------------------- #
+#                             IMAP WEBMAIL SYSTEM                           #
+#                                                                           #
+#    AUTHOR:   Ayman Mohamed                                                #
+#              Nima Mazloumi                                                #
+#    EMAIL:    mo2mo@hotmail.com                                            #
+#              mazloumi@uni-mannheim.de                                     #
+#    DATE:     March 21th, 2006                                             #
+#                                                                           #
+# ------------------------------------------------------------------------- #
+
+# --------------------------- DEVELOPER'S GUIDE --------------------------- #
+
+In order to develop and run the IMAP Webmail system the following must be done:
+
+INSTALLATION OF OPENSSL
+
+	a. To have the Webmail system run over SSL, OpenSSL must be downloaded and 
+	   installed as well as the AOLServer NsOpenSSL module.
+
+	b. OpenSSL can be obtained from:
+	   http://www.openssl.org
+
+	   cd /usr/local/src
+	   wget http://www.openssl.org/source/openssl-0.9.7i.tar.gz
+	   tar xzpf openssl-0.9.7i.tar.gz
+	   cd openssl-0.9.7i
+
+	   emacs Configure
+	   ESC Shift+%
+	   -m486
+	   -march=i486
+	   Ctrl+X+S
+	   Ctrl+X+C
+
+	   ./config
+	   make
+	   make test
+	   make install
+
+	c. NsOpenSSL can be obtained from:
+	   http://www.scottg.net/webtools/aolserver/modules/nsopenssl/
+
+	Note: Documentation of both of these can be obtained from the
+	      corresponding sites listed in points (b) and (c). Further
+	      information may also be obtained by searching the OpenACS forum.
+
+INSTALLATION OF KERBEROS
+
+	Get ncurses-dev first:
+        Command:        cd /usr/local/src
+			wget ftp://invisible-island.net/ncurses/ncurses-5.5.tar.gz
+			./configure --without-cxx
+			make
+			make install
+
+	see http://web.mit.edu/kerberos/www/
+	
+	Command:	cd /usr/local/src
+			wget http://web.mit.edu/kerberos/dist/krb5/1.4/krb5-1.4.3-signed.tar
+			tar -xvf krb5-1.3.4.tar
+			tar xzpf krb5-1.4.3.tar.gz 
+			cd krb5-1.4.3/src
+			./configure
+			make
+	
+INSTALLATION OF UW-IMAP SERVER
+
+	a. Download UW-IMAP Server Distribution (filename: imap.tar.Z)
+	   
+	   This can be obtained from:
+	   ftp://ftp.cac.washington.edu/imap/imap.tar.Z
+	   Extra documentation available at:
+	   http://www.washington.edu/imap
+
+		Commands: 	cd /usr/local/src
+		         	wget ftp://ftp.cac.washington.edu/mail/imap.tar.Z
+
+	b. Un-tar the file
+
+	    Commands: 	cd /usr/local/src/
+		     	tar -xzvf imap.tar.Z
+
+	c. Move the extracted folder (imap-2004g or a similar folder name) to
+	   the /usr/local/ directory
+
+	   Command: mv imap-2004g /usr/local/
+
+	d. Make and install the libraries.
+	   
+	   Depending on the unix system type, the make command changes.
+	   Typical system types include: slx and lnp.
+	   Check the README and docs/ for more information.
+	   Take a look at the Makefile and see if 
+	   there is a port for your OS. For example Redhat is 'lsu'.
+
+	   Command: cd /usr/local/imap-2004g
+	   	    make slx 
+		    make slx SSLTYPE=none (without OpenSSL)
+		    make install
+
+	   If the Webmail system is to be installed in production site, it should
+	   be installed with Secure Sockets Layer (SSL) to ensure the secure 
+	   transport of all imap interactions including user authentication.
+
+	   Command: make slx SSLTYPE=unix
+	   
+	   Redhat-Note: OpenSSL headers try to include krb5.h which 
+	   isn't in the standard include dirs:
+	   http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=111301
+	   
+	   Fix: cp /usr/kerberos/include/* /usr/include/openssl (when RPM was used)
+	        cp /usr/local/src/krb5-1.3.4/src/include/ /usr/include/openssl (when manually installed)
+	
+	e. Start the IMAP Server at localhost (OPTIONAL)
+	   
+	   If you don't have a remote IMAP server available you need to start one on localhost to test
+	   the webmail client.
+	   
+	   - Install the POP2 daemon (ipopd/ipop2d), the POP3 daemon (ipopd/ipop3d), and 
+	     the IMAP daemon (imapd/imapd) on a system directory of your choosing.
+	   
+	   - Update /etc/services to register the pop2 service on TCP port 109, the 
+	     pop3 service on TCP port 110, and the imap service on TCP port 143.  Also 
+	     update Yellow Pages/NIS/NetInfo/etc. if appropriate on your system.
+	   
+	   - Update /etc/inetd.conf to invoke the POP2, POP3, and IMAP daemons on their
+	     associated services.
+	   
+	   See /usr/local/imap-2004g/README for more.
+		
+INSTALLATION OF NS_IMAP AOLSERVER MODULE
+
+	a. Download the ns_imap module (filename: nsimap-3.1.tar.gz)
+	   This can be downloaded from:
+	   http://mesh.dl.sourceforge.net/sourceforge/aolserver/nsimap-3.1.tar.gz
+	   ftp://ftp.crystalballinc.com/pub/vlad/nsimap.tar.gz
+
+	   Command: cd /usr/local/src/aolserver40r5
+	   	    wget http://switch.dl.sourceforge.net/sourceforge/aolserver/nsimap-3.1.tar.gz
+	   	    tar -xzvf nsimap-3.1.tar.gz
+		    cd nsimap-3.1
+		     
+	   
+	   Alternatively from CVS:
+	   
+	   Command:	cd /usr/local/src/aolserver40r5
+			cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/aolserver login
+			cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/aolserver co nsimap
+			cd nsimap
+
+	b. Edit the make file to ensure the listed location of the AOLServer
+	   matches the current location of your own installation. If not, 
+	   point it to the correct location. Also ensure that the location of
+	   the UW IMAP c-client libraries match the Makefile. If not, point
+	   it to the correct location.
+	   
+	   Command:	emacs Makefile
+			SSL      = -DSSL=1
+			SSLLIBS  = -lcrypto -lssl -lcrypt
+			IMAPFLAGS  = -I/usr/local/imap-2004a/c-client $(SSL)
+			IMAPLIBS   = /usr/local/imap-2004a/c-client/c-client.a -L/usr/local/src/krb5-1.3.4/src/lib -lgssapi_krb5 -lpam
+
+	   Comment the line 304 in nsimap.c containing mm_freeenevelope
+	   /* static void mm_freeenvelope(void **ptr); */
+
+	   Comment the 421 line in nsimap.c
+	   /* ((IMAPLOCAL *)session->stream->local)->byeseen = 1; */
+
+	c. Compile the ns_imap module. The resulting nsimap.so file is copied to
+	   its destination accordinly.
+
+	   Command: make install
+
+	   Note: If SSL is to be used, uncomment the SSL lines in the
+	         Makefile. This wont work unless the previous SSL components
+	         were installed.
+	         
+	   Note: If you would like to store the nsimap.so file in a different
+	         location than the AOLServer bin directory, simply call 'make'
+	         and copy the 'nsimap.so' file manually.
+
+	d. Change your AOLServer configuration file to load nsimap
+	
+	   If you have an IMAP Server installed with a valid account you
+	   can directly indicate "yourID" and "yourPWD" to test you installation.
+	   Comment those lines if not applicable.
+	
+		Command: emacs var/lib/aolserver/service0/etc/config.tcl
+
+		ns_param  nsimap    ${bindir}/nsimap.so
+
+		#---------------------------------------------------------------------
+		# IMAP support
+		#---------------------------------------------------------------------
+		ns_section      ns/server/${server}/module/nsimap
+		ns_param        idle_timeout    1800
+		ns_param        debug           1
+		ns_param       mailbox         "INBOX"
+		ns_param       user            "yourID"
+		ns_param       password        "yourPWD"
+		
+	e. Start the AOLServer and check the logs
+		Command: /usr/local/aolserver/bin/nsd-oracle -t /var/lib/aolserver/service0/etc/config.tcl (ORACLE)
+			 /usr/local/aolserver/bin/nsd-postgres -t /var/lib/aolserver/service0/etc/config.tcl (POSTGRES)
+		
+			cat /var/lib/aolserver/service0/log/error.log
+				
+		If no errors we reported go to the ACS Developer Support Shell and test your installation:
+		
+		Browser:	http://yourhost:yourport/ds/shell
+				ns_imap open -mailbox {{YOURIMAPSERVER/debug}INBOX}  	#for a remote server
+				ns_imap open -mailbox {{localhost/debug}INBOX} 		#for your test server
+
+
+INSTALLATION OF TCLLIB
+        In order to allow sending mails via SMTP you need tcllib installed.
+        Tcllib contains the two required modules smtp and mime, versions 1.4
+	More: http://wiki.tcl.tk/1773
+	      http://tcllib.sourceforge.net/doc/smtp.html
+	      http://tcllib.sourceforge.net/doc/mime.html
+	      http://physnet.physik.uni-oldenburg.de/~schlenk/tcl/tcllib/tcllib-intro.pdf
+
+        a. Get tcllib right from CVS
+	   cd /usr/local/src
+	   cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/tcllib login 
+	   cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/tcllib co tcllib
+	   cd tcllib
+
+	b. Find your tclsh installation
+           locate tclsh
+
+        b. Call tclsh with the installer
+	   /usr/local/src/tcl8.4.5/unix/tclsh installer.tcl
+
+	c. Verify your installation in tclsh
+	   % package require smtp
+	   1.4
+	   exit
+
+	Optional:
+	[d. Install tls
+	   More: http://tls.sourceforge.net/
+	   wget	http://puzzle.dl.sourceforge.net/sourceforge/tls/tls1.5.0-linux-x86.tar.gz
+	   tar zxpf tls1.5.0-linux-x86.tar.gz
+	   mv tls1.5 /usr/local/lib/tcllib1.6.1.1/tls
+	]
+
+MAIL TRANSFER AGENT (MTA)
+
+	a. Since not all Linux/Unix distributions ship with a MTA, an MTA
+	   will need to obtained. The MTA allows the sending of mail from
+	   Webmail system. (Note: If another MTA is available, it can
+	   be used provided it allows relaying from your server.)
+
+	b. Many MTA's are available such as Qmail, Postfix, Sendmail, etc.
+	   For my development I used Qmail which was reliable and I also
+	   used Postfix. Although any MTA will suffice.
+
+	   For Qmail, the following were required and were downloaded 
+	   as RPMs for my distribution: daemontools, uscpi, qmail
+
+	   RPMs can be found at http://rpmfind.net for most distributions.
+
+	c. The AOLServer also needs to be configured with an ns/parameter
+	   needed to be added if not already present. This was added in the
+	   config file (eg. /usr/local/aolserver/birdnotes.tcl):
+
+	   Required line: ns_param  mailhost   localhost
+
+	   Note: If you are using an MTA on another server, its location  
+	         must be specified in this parameter.
+	         
+NSIMAP API
+	For more information on the nsimap API take a look at
+	/usr/local/src/aolserver40r5/nsimap/README
+	         
+# ---------------------------------- EOF ---------------------------------- #

@@ -1,0 +1,94 @@
+# ------------------------------------------------------------------------- #
+#                             IMAP WEBMAIL SYSTEM                           #
+#                                                                           #
+#    AUTHOR:   Ayman Mohamed                                                #
+#    EMAIL:    mo2mo@hotmail.com                                            #
+#    DATE:     November 2nd, 2002                                           #
+#                                                                           #
+# ------------------------------------------------------------------------- #
+
+# ------------------------------ USER'S GUIDE ----------------------------- #
+
+The following document is to be used as an aid for users in understanding
+how to use the Webmail system. The main user scenarios are run through
+below.
+
+1. LOGING INTO THE SYSTEM
+
+	a. The user must provide their username (generally one word).
+	b. The user then provides their password.
+	c. The user selects the IMAP server they wish to connect to.
+	d. The user then clicks 'Login'.
+
+The following scenarios can only be performed if the user is logged in.
+
+2. VIEWING A USER'S INBOX
+
+	a. The user selects 'Inbox' from the main menu provided at the
+	   top of the screen.
+	b. This then brings up their Inbox with all their emails listed.
+
+3. VIEWING AN EMAIL
+
+	a. Once in their Inbox, the user can select any of the emails in
+	   their list by selecting the Sender's name.
+	b. This then takes the user to view the email from that sender.
+	c. The user then has two sets of options:
+	     1. They can then read the email and choose to reply, forward
+	        or delete the mail message.
+	     2. They can then read the email and choose to traverse through
+	        the emails via previous and next or close the email.
+	   These options are located on the top left and right respectively
+	   of the email they are reading. The options are also repeated on 
+	   the bottom of the email.
+	d. If the email contains attachments, these will be displayed below
+	   the email message in the 'Attachments' section.
+	e. The user can view any attachments by selecting the 'Filename'
+	   of the attachment. If the browser can display the email, it will,
+	   otherwise, the attachment will be asked to be downloaded by the
+	   user.
+
+4. COMPOSING AN EMAIL
+
+	a. The user selects 'Compose' from the main menu provided at the
+	   top of the screen.
+	b. This then takes them to a form for their email.
+	c. The user then fills the fields they wish to have in the email
+	   (at least one recipient must be specified to send the mail).
+	d. Once the user has completed their email, pressing 'Send' 
+	   processes the mail and sends it to their recipients.
+
+5. FOLDER MANAGEMENT
+
+	a. The user can select 'Folders' to manage their folders.
+	b. This takes them to their current folder list.
+	c. The user can then create or delete a folder by selecting from
+	   the sub-menu located under the main menu bar on the top left.
+	d. This takes the user to their chosen event (create or delete).
+	e. For creating a folder, the folder name is required to be
+	   in and 'Create' selected.
+	f. For deleting a folder, the user must select which folder they
+	   would like to delete from the dropdown menu and then select
+	   'Delete' to delete it.
+
+6. CONTACT MANAGEMENT
+
+	a. The user can select 'Contacts' to manage their online
+	   address book.
+	b. This takes them to their current contact list.
+	c. The user can then add or remove a contact by selecting from
+	   the sub-menu located under the main menu bar on the top left.
+	d. This takes the user to their chosen event (add or remove).
+	e. For adding a contact, the user must fill in the required
+	   fields within the form and then select 'Add'.
+	f. For removing a contact, the user must select which contact they
+	   would like to delete from the dropdown menu and then select
+	   'Remove' to remove it.
+	g. The user can send a contact an email from the contacts page
+	   by selecting the envelope besides the contact's name.
+
+7. LOGING OUT
+
+	a. The user is able to logout by selecting 'Logout' from the 
+	   main menu provided at the top of the screen.
+# ---------------------------------- EOF ---------------------------------- #

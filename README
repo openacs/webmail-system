@@ -1,0 +1,22 @@
+# ------------------------------------------------------------------------- #
+#                             IMAP WEBMAIL SYSTEM                           #
+#                                                                           #
+#    AUTHOR:   Ayman Mohamed                                                #
+#              Nima Mazloumi                                                #
+#    EMAIL:    mo2mo@hotmail.com                                            #
+#              mazloumi@uni-mannheim.de                                     #
+#    DATE:     August 15th, 2004                                            #
+#                                                                           #
+# ------------------------------------------------------------------------- #
+
+# --------------------------------- README -------------------------------- #
+
+Within this package are contained some README's which should be read
+before trying to proceed with this package in any form.
+
+Check the following:
+
+1. www/help/USER-README for Webmail usage help
+2. www/doc/DEVELOPER-README for Webmail installation and development
+
+# ---------------------------------- EOF ---------------------------------- #
