@@ -407,7 +407,9 @@ namespace eval webmail {
 	Creates a unique boundary within the email context
     } {
 	if {[exists_and_not_null str]} {
-	    return "OACS-[md5::md5 $str]"
+	    package require md5
+	    set md5 [string tolower [md5::Hex [md5::md5 -- $str]]]
+	    return "OACS-$md5"
 	} else {
 	    return "OACS-2e4w7w0k32-0A"
 	}
