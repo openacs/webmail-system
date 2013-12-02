@@ -294,13 +294,18 @@ namespace eval webmail {
     ad_proc -public mail_send { sender recipients subject body } {
 	Sends an email over Sendmail installed locally
     } {
-	ns_log debug "WEBMAIL: Starting the ns_sendmail command..."
+	ns_log debug "WEBMAIL: Starting the sendmail command..."
 	
-	if [catch { ns_sendmail $recipients $sender $subject $body } errmsg] {
+        if [catch { acs_mail_lite::send \
+			-to_addr [split $recipients ,] \
+			-from_addr $sender \
+			-subject $subject \
+			-body $body 
+	} errmsg] {
 	    ns_log debug "WEBMAIL: Email to $recipients failed: $errmsg"
 	}
 	
-	ns_log debug  "WEBMAIL: Ending the ns_sendmail command..."
+	ns_log debug  "WEBMAIL: Ending the sendmail command..."
     }
 
 
