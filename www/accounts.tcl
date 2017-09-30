@@ -70,7 +70,7 @@ template::list::create \
             label "[_ webmail-system.Active]"
             html "align center"
             display_template {
-                <if @accounts.default_p@ false>
+                <if @accounts.default_p;literal@ false>
                 <a href="@accounts.default_p_url@" title="Make Default">
                 <img src="/resources/acs-subsite/radio.gif" height="13" \
                     width="13" border="0" style="background-color: white;"></a>
@@ -83,7 +83,7 @@ template::list::create \
         } delete {
             label ""
             display_template {
-		<if @accounts.default_p@ false>
+		<if @accounts.default_p;literal@ false>
                 <a href="@accounts.delete_url@"
                 title="Delete this account"
                 onclick="return confirm('Are you sure you want to delete this account at @accounts.neat_name@?');">

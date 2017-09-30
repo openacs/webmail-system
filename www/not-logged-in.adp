@@ -23,5 +23,5 @@
 
 <P>
 <A HREF="index" class="button">#webmail-system.Login#</A>
-<if @allowed_p@><A HREF="accounts" class="button">#webmail-system.Accounts#</a></if>
+<if @allowed_p;literal@ true><A HREF="accounts" class="button">#webmail-system.Accounts#</a></if>
 </P>

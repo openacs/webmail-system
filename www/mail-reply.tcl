@@ -57,7 +57,7 @@ if { $struct(type) == "multipart" } {
 
 set body "\n\n\n\n---------------[_ webmail-system.Original_Message]---------------\n\n"
 append body "[_ webmail-system.To] $sender\n[_ webmail-system.From] $recipient\n[_ webmail-system.Subject] $subject\n\n"
-append body $[ad_html_to_text $content]
+append body $[ad_html_to_text -- $content]
 append body "\n\n-------------[_ webmail-system.End_Original_Message]-------------\n"
 
 append prefix $subject

@@ -72,7 +72,7 @@ template::list::create \
             html "align left"
             display_template {
 		@servers.smtp_addr@:@servers.smtp_port@
-                <if @servers.smtp_auth_p@ true>
+                <if @servers.smtp_auth_p;literal@ true>
                 <a href="@servers.smtp_auth_p_url@" title="No SMTP Authentication">
                 <img align="right" src="/shared/images/checkboxchecked" height="13" \
                     width="13" border="0" style="background-color: white;"></a>
@@ -87,7 +87,7 @@ template::list::create \
 	    label "[_ webmail-system.Active]"
 	    html "align right"
             display_template {
-                <if @servers.active_p@ true>
+                <if @servers.active_p;literal@ true>
 		<a href="@servers.active_p_url@" title="Deactivate">
 		<img src="/shared/images/checkboxchecked" height="13" \
 		    width="13" border="0" style="background-color: white;"></a>

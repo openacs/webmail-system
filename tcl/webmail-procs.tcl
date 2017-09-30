@@ -342,7 +342,7 @@ namespace eval webmail {
 	    }
 	    2 {
 		# Enhanced Text
-		return [ad_text_to_html [ad_html_to_text $body]]
+		return [ad_text_to_html [ad_html_to_text -- $body]]
 	    }
 	    3 {
 		# Plain Text

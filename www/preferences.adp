@@ -11,7 +11,7 @@
 <property name="title">@page_title@</property>
 
 <formtemplate id="preferences" style="standard-webmail"></formtemplate>
-<if @has_card_p@>
+<if @has_card_p;literal@ true>
 <table border="0">
 <tr class="odd"> <td align="left"><b>@card_name@</b></td><td align="right"><b>@card_type@</b></td></tr>
 <tr class="even"><td colspan="2"><pre>@card_content@</pre></td></tr>

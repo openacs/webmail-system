@@ -62,7 +62,7 @@ template::list::create \
             label "[_ webmail-system.Active]"
             html "align right"
             display_template {
-                <if @users.active_p@ true>
+                <if @users.active_p;literal@ true>
                 <a href="@users.active_p_url@" title="Deactivate">
                 <img src="/shared/images/checkboxchecked" height="13" \
                     width="13" border="0" style="background-color: white;"></a>
