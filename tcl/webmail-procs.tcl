@@ -355,9 +355,9 @@ namespace eval webmail {
     ######################################################################
     # Procedure:        mail_decode_hdr
     # Params:           header string
-    # Descrption:       Decodes header string
+    # Description:      Decodes header string
     ######################################################################
-    
+
     ad_proc -public mail_decode_hdr { str } {
 	Decodes the email
     } {
