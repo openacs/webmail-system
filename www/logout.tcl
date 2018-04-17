@@ -22,7 +22,7 @@ ad_page_contract {
 
 ns_log debug "WEBMAIL: Logout started"
 
-set page_title "#webmail-sytem.Logout#"
+set page_title "#webmail-system.Logout#"
 
 # -------------------------- PROCESSING ------------------------- #
 # Close the IMAP connection

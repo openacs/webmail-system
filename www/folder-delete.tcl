@@ -37,7 +37,7 @@ if { [empty_string_p $id] || [catch { set new_mail [ns_imap ping $id] } errmsg] 
 
 # ------------------------ SET VARIABLES ------------------------ #
 
-set page_title "#webmail-sytem.Deleting_a_folder#"
+set page_title "#webmail-system.Deleting_a_folder#"
 set submit_label "[_ webmail-system.Delete]"
 set target "folder-delete-2"
 
