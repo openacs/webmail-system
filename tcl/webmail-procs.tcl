@@ -675,7 +675,7 @@ namespace eval webmail {
         @param attr       The list of attributes to disable
         Disables all passed  HTML Attributes.
     } {
-        set attributes [list]
+        set attributes {}
         for { set i [string first < $html] } { $i != -1 } { set i [string first < $html $i] } {
            incr i
            regexp -indices -start $i {\A/?([-_a-zA-Z0-9]+)\s*} $html match name_idx

@@ -170,7 +170,7 @@ ad_form -extend -name compose_email -form {
 	set has_attach_p 0
     }
 
-    set emailList [list]
+    set emailList {}
     package require smtp
     package require mime
 
