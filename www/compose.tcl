@@ -44,7 +44,7 @@ set package_id [ad_conn package_id]
 
 # ------------------------- CREATE FORM ------------------------- #
 
-#set opts [list]
+#set opts {}
 
 #db_multirow emails get_emails {} {
 #    lappend opts [list $email]

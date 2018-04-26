@@ -28,13 +28,13 @@ set page_title "[_ webmail-system.User_Preferences]"
 
 # ------------------------- CREATE FORM ------------------------- #
 
-set options [list]
+set options {}
 lappend options [list "[_ webmail-system.Full_HTML]" 0]
 lappend options [list "[_ webmail-system.HTML_without_CSS]" 1]
 lappend options [list "[_ webmail-system.Enhanced_Text]" 2]
 lappend options [list "[_ webmail-system.Plain_Text]" 3]
 
-set opts [list]
+set opts {}
 lappend opts [list "[_ webmail-system.Text]" 0]
 lappend opts [list "[_ webmail-system.Icons]" 1]
 

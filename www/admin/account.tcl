@@ -24,14 +24,14 @@ set page_title "#webmail-system.Adding_an_account#"
 set address "Administrator"
 set id [ad_get_client_property webmail-system conn_id]
 
-set opts [list]
+set opts {}
 
 db_multirow -extend { server_line } servers get_servers {} {
     set server_line "$neat_name ($host_addr)"
     lappend opts [list $server_line $server_id ]
 }
 
-set uopts [list]
+set uopts {}
 
 db_multirow -extend { name } users get_users {} {
     acs_user::get -user_id $user_id -array user

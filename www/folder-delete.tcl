@@ -46,7 +46,7 @@ set mailbox "\{$server\}"
 # -------------------------- PROCESSING ------------------------- #
 
 set folders [ns_imap list $id $mailbox *]
-set fnames [list]
+set fnames {}
 
 foreach {odd even} $folders {
 	lappend fnames $odd
