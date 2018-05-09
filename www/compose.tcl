@@ -44,7 +44,7 @@ set package_id [ad_conn package_id]
 
 # ------------------------- CREATE FORM ------------------------- #
 
-#set opts {}
+#set opts [list]
 
 #db_multirow emails get_emails {} {
 #    lappend opts [list $email]
@@ -170,7 +170,7 @@ ad_form -extend -name compose_email -form {
 	set has_attach_p 0
     }
 
-    set emailList {}
+    set emailList [list]
     package require smtp
     package require mime
 

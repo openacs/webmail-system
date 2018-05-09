@@ -25,12 +25,12 @@ set address "Administrator"
 
 set user_id [ad_conn user_id]
 
-set opts {}
+set opts [list]
 db_multirow auth_types get_auth_types {} {
     lappend opts [list $type $type_id]
 }
 
-set options {}
+set options [list]
 db_multirow server_types get_serv_types {} {
     lappend options [list $type $type_id]
 }

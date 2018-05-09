@@ -64,7 +64,7 @@ template::list::create \
 # -------------------------- PROCESSING ------------------------- #
 
 set folders [ns_imap list $id $mailbox *]
-set fnames {}
+set fnames [list]
 set number 0
 foreach {odd even} $folders {
     incr number

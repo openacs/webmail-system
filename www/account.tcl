@@ -25,7 +25,7 @@ set address "Administrator"
 set id [ad_get_client_property webmail-system conn_id]
 set user_id [ad_conn user_id]
 
-set opts {}
+set opts [list]
 
 db_multirow -extend { server_line } servers get_servers {} {
     set server_line "$neat_name ($host_addr)"

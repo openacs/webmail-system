@@ -74,7 +74,7 @@ set recipient $email
 
 set use_wysiwyg_p [parameter::get -parameter "UseWysiwygP" -default "f"]
 
-set opts {}
+set opts [list]
 
 db_multirow emails get_emails {} {
   lappend opts [list "$username@$host_addr"]
