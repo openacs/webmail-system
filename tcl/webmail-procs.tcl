@@ -455,7 +455,7 @@ namespace eval webmail {
 	Creates the header depending on the content_type
     } {
 
-	set header [ns_set new]
+	set header [ns_set create]
 	ns_set put $header "MIME-Version" "1.0"
 	ns_set update $header "X-Mailer" "OpenACS 5.1"
 
